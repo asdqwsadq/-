@@ -1,0 +1,105 @@
+<svg width="280" height="360" viewBox="0 0 280 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="figureGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EFD99A"/>
+      <stop offset="0.3" stop-color="#D7B46C"/>
+      <stop offset="0.7" stop-color="#C4A050"/>
+      <stop offset="1" stop-color="#B89238"/>
+    </linearGradient>
+    <linearGradient id="fanGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F6E5B9"/>
+      <stop offset="1" stop-color="#D7B46C"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D7B46C"/>
+      <stop offset="1" stop-color="#67C4AC"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Strong glow behind figure -->
+  <circle cx="140" cy="150" r="90" fill="url(#glowGrad)" opacity="0.08"/>
+  <circle cx="140" cy="150" r="60" fill="#D7B46C" opacity="0.06"/>
+
+  <!-- 纶巾 headwrap (hat) - the distinctive silk headband -->
+  <path d="M108 52C108 36 114 22 128 16C140 11 152 14 158 22C166 32 172 50 172 62C172 68 170 74 168 78L166 80H114L112 76C110 70 108 62 108 52Z"
+        fill="url(#figureGrad)" opacity="0.6"/>
+  <!-- Headwrap band outline -->
+  <path d="M108 52C108 36 114 22 128 16C140 11 152 14 158 22C166 32 172 50 172 62"
+        stroke="#EFD99A" stroke-width="2" fill="none" opacity="0.5"/>
+  <!-- Headwrap trailing ribbon -->
+  <path d="M130 28C126 34 118 44 108 50" stroke="#EFD99A" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Face silhouette -->
+  <ellipse cx="140" cy="86" rx="34" ry="42" fill="url(#figureGrad)" opacity="0.7"/>
+
+  <!-- Face outline -->
+  <ellipse cx="140" cy="86" rx="34" ry="42" stroke="#EFD99A" stroke-width="1.5" fill="none" opacity="0.3"/>
+
+  <!-- Eyes -->
+  <ellipse cx="125" cy="82" rx="6" ry="3" fill="#1A1A2E"/>
+  <ellipse cx="155" cy="82" rx="6" ry="3" fill="#1A1A2E"/>
+
+  <!-- Eyebrows -->
+  <path d="M116 73C120 70 128 69 132 71" stroke="#1A1A2E" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M148 71C152 69 160 70 164 73" stroke="#1A1A2E" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Nose -->
+  <path d="M138 86L140 94L142 94" stroke="#8B7A5C" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Mouth -->
+  <path d="M132 100C136 103 144 103 148 100" stroke="#8B7A5C" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Beard -->
+  <path d="M126 104C122 112 118 144 122 168" stroke="url(#figureGrad)" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <path d="M154 104C158 112 162 144 158 168" stroke="url(#figureGrad)" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <!-- Long beard (central) -->
+  <path d="M136 104C134 120 132 148 130 178C128 200 126 222 128 238" stroke="url(#figureGrad)" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <path d="M144 104C146 120 148 148 150 178C152 200 154 222 152 238" stroke="url(#figureGrad)" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <path d="M128 238C136 244 144 244 152 238" stroke="url(#figureGrad)" stroke-width="2.5" fill="none" opacity="0.6"/>
+
+  <!-- Body / Robes -->
+  <path d="M98 144C96 168 94 200 92 240C90 278 88 300 86 320H194C192 300 190 278 188 240C186 200 184 168 182 144H98Z"
+        fill="url(#figureGrad)" opacity="0.35"/>
+  <path d="M98 144C96 168 94 200 92 240C90 278 88 300 86 320H194C192 300 190 278 188 240C186 200 184 168 182 144"
+        stroke="#EFD99A" stroke-width="1.5" fill="none" opacity="0.25"/>
+
+  <!-- Robe V-neck -->
+  <path d="M130 144L140 168L150 144" stroke="#EFD99A" stroke-width="2" fill="none" opacity="0.5"/>
+
+  <!-- Belt / sash -->
+  <rect x="96" y="210" width="88" height="4" rx="2" fill="#EFD99A" opacity="0.4"/>
+  <circle cx="140" cy="212" r="4" fill="#EFD99A" opacity="0.5"/>
+
+  <!-- Left arm / sleeve holding fan -->
+  <path d="M98 148C84 152 60 160 44 168C30 174 22 180 20 184"
+        stroke="url(#figureGrad)" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.5"/>
+  <path d="M98 144C86 146 64 152 48 160C34 166 24 174 20 180"
+        stroke="#EFD99A" stroke-width="1.5" fill="none" opacity="0.3" stroke-linecap="round"/>
+
+  <!-- Feather fan (羽扇) -->
+  <path d="M20 184C16 170 14 146 24 120C30 104 40 90 52 82C60 78 68 78 72 84L76 88L68 94C60 86 48 94 42 102C36 110 32 124 30 136C28 150 30 168 34 178L20 184Z"
+        fill="url(#fanGrad)" opacity="0.85"/>
+  <!-- Fan outline -->
+  <path d="M20 184C16 170 14 146 24 120C30 104 40 90 52 82"
+        stroke="#F6E5B9" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <!-- Fan feather lines -->
+  <path d="M24 120C36 110 48 106 56 110" stroke="#B89238" stroke-width="0.8" opacity="0.5"/>
+  <path d="M22 132C34 122 48 118 58 122" stroke="#B89238" stroke-width="0.8" opacity="0.5"/>
+  <path d="M22 144C34 134 48 130 56 134" stroke="#B89238" stroke-width="0.8" opacity="0.5"/>
+  <path d="M24 156C34 148 46 144 54 148" stroke="#B89238" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Right arm / sleeve -->
+  <path d="M182 148C196 156 210 168 216 176"
+        stroke="url(#figureGrad)" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.5"/>
+  <path d="M182 144C194 150 208 162 214 170"
+        stroke="#EFD99A" stroke-width="1.5" fill="none" opacity="0.3" stroke-linecap="round"/>
+
+  <!-- Subtle sparkle dots -->
+  <circle cx="28" cy="148" r="1.5" fill="#F6E5B9" opacity="0.3"/>
+  <circle cx="18" cy="130" r="1" fill="#F6E5B9" opacity="0.2"/>
+  <circle cx="34" cy="112" r="1.2" fill="#F6E5B9" opacity="0.15"/>
+  <circle cx="16" cy="168" r="0.8" fill="#F6E5B9" opacity="0.12"/>
+
+  <!-- Name label -->
+  <text x="140" y="338" text-anchor="middle" fill="#D7B46C" font-size="14" font-family="Songti SC, STSong, serif" opacity="0.6">诸葛亮</text>
+</svg>

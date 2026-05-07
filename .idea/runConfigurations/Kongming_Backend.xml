@@ -1,0 +1,21 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Kongming Backend" type="PythonConfigurationType" factoryName="Python">
+    <module name="kongming_agent" />
+    <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/run_backend.py" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend" />
+    <option name="PARENT_ENVS" value="true" />
+    <option name="SDK_HOME" value="" />
+    <option name="IS_MODULE_SDK" value="true" />
+    <option name="ADD_CONTENT_ROOTS" value="true" />
+    <option name="ADD_SOURCE_ROOTS" value="true" />
+    <option name="EMULATE_TERMINAL" value="true" />
+    <envs>
+      <env name="PYTHONUNBUFFERED" value="1" />
+      <env name="DASHSCOPE_API_KEY" value="sk-a1245fe43a464645b77d0a60e719403c" />
+      <env name="MYSQL_USER" value="root" />
+      <env name="MYSQL_PASSWORD" value="wu1364382646" />
+      <env name="MYSQL_DATABASE" value="kongming_agent" />
+    </envs>
+    <method v="2" />
+  </configuration>
+</component>
