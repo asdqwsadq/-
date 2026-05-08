@@ -6,9 +6,9 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-from app.core.config import settings
-from app.services.milvus_store import MilvusChunkRecord, get_milvus_store
-from app.services.ollama_client import ollama_client
+from app.kongming_agent.backend.app.core.config import settings
+from app.kongming_agent.backend.app.services.milvus_store import MilvusChunkRecord, get_milvus_store
+from app.kongming_agent.backend.app.services.ollama_client import ollama_client
 
 
 def _normalize(text: str) -> str:

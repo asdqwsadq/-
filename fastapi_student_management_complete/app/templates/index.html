@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>教务管理系统</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="container">
+    <section id="login-section" class="card login-card">
+      <h1>系统登录</h1>
+      <p class="desc">教务管理平台</p>
+      <form id="login-form" class="stack">
+        <input id="username" placeholder="请输入账号" required />
+        <input id="password" type="password" placeholder="请输入密码" required />
+        <button type="submit">登录</button>
+      </form>
+    </section>
+
+    <section id="app-section" class="hidden">
+      <div class="header-row">
+        <div>
+          <h1>教务管理系统</h1>
+          <p class="desc">学生、老师、课程、班级、就业、成绩统计 + AI 助手</p>
+          <p id="role-badge" class="role-badge"></p>
+        </div>
+        <button id="logout-btn" class="secondary">退出登录</button>
+      </div>
+
+      <section class="card">
+        <div id="tabs" class="tabs"></div>
+      </section>
+
+      <section class="card">
+        <div class="header-row">
+          <h2 id="module-title"></h2>
+          <button id="toggle-form-btn" type="button" class="secondary">展开新增/编辑</button>
+        </div>
+        <form id="module-form" class="hidden">
+          <input type="hidden" id="record-id" />
+          <div id="form-grid" class="grid"></div>
+          <div class="actions">
+            <button type="submit" id="submit-btn">保存</button>
+            <button type="button" id="cancel-btn" class="secondary hidden">取消编辑</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="card">
+        <div class="header-row">
+          <h2>数据列表</h2>
+          <div class="actions">
+            <button id="toggle-query-btn" type="button" class="secondary">展开查询/筛选</button>
+            <button id="search-btn" type="button" class="secondary">查询</button>
+            <button id="reset-search-btn" type="button" class="secondary">重置</button>
+            <button id="refresh-btn" type="button" class="secondary">刷新</button>
+          </div>
+        </div>
+        <div id="query-panel" class="query-panel hidden">
+          <div id="query-grid" class="grid"></div>
+        </div>
+        <table>
+          <thead id="table-head"></thead>
+          <tbody id="table-body"></tbody>
+        </table>
+        <div id="pagination-container" class="pagination"></div>
+      </section>
+
+      <section class="card">
+        <div class="header-row">
+          <h2>统计看板</h2>
+          <button id="stats-btn" class="secondary">刷新统计</button>
+        </div>
+        <div id="stats-box" class="stats-grid"></div>
+        <div id="course-score-box" class="list-box"></div>
+      </section>
+
+      <section class="card" id="logs-section">
+        <div class="header-row">
+          <h2>操作日志</h2>
+          <button id="logs-btn" class="secondary">刷新日志</button>
+        </div>
+        <div id="logs-box" class="list-box"></div>
+      </section>
+
+      <section class="card">
+        <h2>AI 对话（DeepSeek）</h2>
+        <form id="chat-form" class="stack">
+          <textarea id="chat-input" rows="4" placeholder="例如：帮我分析当前成绩情况并给出提升建议"></textarea>
+          <button type="submit">发送</button>
+        </form>
+        <div id="chat-output" class="chat-output"></div>
+        <div id="chat-chart" class="hidden" style="height: 360px; margin-top: 12px;"></div>
+      </section>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+  <script type="module" src="/static/js/bootstrap.js"></script>
+</body>
+</html>

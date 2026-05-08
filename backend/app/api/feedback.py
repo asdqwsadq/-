@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from fastapi import APIRouter
 
-from app.schemas import ApiResponse, FeedbackCreateRequest
-from app.services.session_service import session_service
+from app.kongming_agent.backend.app.schemas import ApiResponse, FeedbackCreateRequest
+from app.kongming_agent.backend.app.services.session_service import session_service
 
 
 router = APIRouter(tags=["反馈"])

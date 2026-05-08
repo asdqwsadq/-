@@ -6,12 +6,12 @@ from typing import Any
 
 from fastapi import APIRouter, HTTPException, Query
 
-from app.core.config import settings
-from app.schemas import ApiResponse, KnowledgeUploadRequest, SearchQueryResponse
-from app.services.knowledge_base import FourClassicsKnowledgeBase
-from app.services.knowledge_ingestion import ingestor
-from app.services.session_service import session_service
-from app.services.deepseek_client import deepseek_client
+from app.kongming_agent.backend.app.core.config import settings
+from app.kongming_agent.backend.app.schemas import ApiResponse, KnowledgeUploadRequest, SearchQueryResponse
+from app.kongming_agent.backend.app.services.knowledge_base import FourClassicsKnowledgeBase
+from app.kongming_agent.backend.app.services.knowledge_ingestion import ingestor
+from app.kongming_agent.backend.app.services.session_service import session_service
+from app.kongming_agent.backend.app.services.deepseek_client import deepseek_client
 
 
 router = APIRouter(tags=["知识库"])

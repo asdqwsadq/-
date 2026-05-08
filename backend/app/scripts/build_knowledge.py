@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import json
 
-from app.services.knowledge_base import FourClassicsKnowledgeBase
+from app.kongming_agent.backend.app.services.knowledge_base import FourClassicsKnowledgeBase
 
 
 if __name__ == "__main__":

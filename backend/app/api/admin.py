@@ -2,9 +2,9 @@ from __future__ import annotations
 
 from fastapi import APIRouter, HTTPException
 
-from app.schemas import ApiResponse
-from app.services.session_service import session_service
-from app.schemas import PromptTemplateCreateRequest, PromptTemplateUpdateRequest
+from app.kongming_agent.backend.app.schemas import ApiResponse
+from app.kongming_agent.backend.app.services.session_service import session_service
+from app.kongming_agent.backend.app.schemas import PromptTemplateCreateRequest, PromptTemplateUpdateRequest
 
 
 router = APIRouter(tags=["管理"])

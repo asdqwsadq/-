@@ -6,7 +6,7 @@ from typing import Any
 
 import httpx
 
-from app.core.config import settings
+from app.kongming_agent.backend.app.core.config import settings
 
 
 class DeepSeekClient:

@@ -8,7 +8,7 @@ from sqlalchemy import create_engine, text
 from sqlalchemy import inspect as sqlalchemy_inspect
 from sqlalchemy.orm import DeclarativeBase, Session, sessionmaker
 
-from app.core.config import settings
+from app.kongming_agent.backend.app.core.config import settings
 
 
 class Base(DeclarativeBase):
@@ -50,7 +50,7 @@ SessionLocal = sessionmaker(bind=engine, autoflush=False, autocommit=False, expi
 
 
 def init_db() -> None:
-    from app.models import mysql  # noqa: F401
+    from app.kongming_agent.backend.app.models import mysql  # noqa: F401
 
     Base.metadata.create_all(bind=engine)
     with engine.begin() as conn:

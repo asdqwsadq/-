@@ -298,7 +298,7 @@ dd {
   padding: 18px;
   background:
     linear-gradient(90deg, rgba(10, 12, 13, 0.94) 0%, rgba(16, 20, 21, 0.74) 45%, rgba(18, 19, 17, 0.64) 100%),
-    url('/bg-tag.jpg') right 20px center / auto 90px no-repeat,
+    url('/kongming/tag-image.jpg') right 20px center / auto 90px no-repeat,
     linear-gradient(135deg, rgba(51, 72, 93, 0.62), rgba(19, 20, 18, 0.92));
 }
 
@@ -575,7 +575,7 @@ dd {
   inset: 0;
   background:
     linear-gradient(180deg, rgba(11, 15, 20, 0.16), rgba(11, 15, 20, 0.7)),
-    url('/portrait.jpeg') center 45% / cover no-repeat;
+    url('/kongming/portrait-image.jpeg') center 45% / cover no-repeat;
   opacity: 0.96;
   pointer-events: none;
 }
@@ -707,7 +707,7 @@ dd {
     min-height: 150px;
     background:
       linear-gradient(90deg, rgba(10, 12, 13, 0.94), rgba(16, 20, 21, 0.7)),
-      url('/bg-tag.jpg') right 12px center / auto 112px no-repeat,
+      url('/kongming/tag-image.jpg') right 12px center / auto 112px no-repeat,
       linear-gradient(135deg, rgba(51, 72, 93, 0.5), rgba(19, 20, 18, 0.92));
   }
 

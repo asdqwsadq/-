@@ -2,11 +2,11 @@ from __future__ import annotations
 
 from fastapi import APIRouter
 
-from app.api.admin import router as admin_router
-from app.api.agent import router as agent_router
-from app.api.feedback import router as feedback_router
-from app.api.health import router as health_router
-from app.api.knowledge import router as knowledge_router
+from app.kongming_agent.backend.app.api.admin import router as admin_router
+from app.kongming_agent.backend.app.api.agent import router as agent_router
+from app.kongming_agent.backend.app.api.feedback import router as feedback_router
+from app.kongming_agent.backend.app.api.health import router as health_router
+from app.kongming_agent.backend.app.api.knowledge import router as knowledge_router
 
 
 router = APIRouter()

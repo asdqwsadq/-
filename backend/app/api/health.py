@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from fastapi import APIRouter
 
-from app.core.config import settings
-from app.schemas import ApiResponse
+from app.kongming_agent.backend.app.core.config import settings
+from app.kongming_agent.backend.app.schemas import ApiResponse
 
 
 router = APIRouter(tags=["健康检查"])

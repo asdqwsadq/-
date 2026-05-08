@@ -8,9 +8,9 @@ from typing import Any
 from sqlalchemy import delete, func, select
 from sqlalchemy.exc import NoResultFound
 
-from app.core.config import settings
-from app.core.database import inspect_database, session_scope
-from app.models.mysql import (
+from app.kongming_agent.backend.app.core.config import settings
+from app.kongming_agent.backend.app.core.database import inspect_database, session_scope
+from app.kongming_agent.backend.app.models.mysql import (
     AgentProfile,
     AppMeta,
     ChatSession,

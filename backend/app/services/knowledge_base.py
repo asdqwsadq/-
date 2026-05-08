@@ -7,9 +7,9 @@ from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Any
 
-from app.core.config import settings
-from app.services.knowledge_ingestion import ProgressCallback, ingestor
-from app.services.milvus_store import get_milvus_store
+from app.kongming_agent.backend.app.core.config import settings
+from app.kongming_agent.backend.app.services.knowledge_ingestion import ProgressCallback, ingestor
+from app.kongming_agent.backend.app.services.milvus_store import get_milvus_store
 
 
 def _normalize_text(text: str) -> str:

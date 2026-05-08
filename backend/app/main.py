@@ -5,10 +5,10 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, HTMLResponse, Response
 from fastapi.staticfiles import StaticFiles
 
-from app.api.v1 import router as v1_router
-from app.core.config import settings
-from app.core.database import init_db
-from app.services.session_service import session_service
+from app.kongming_agent.backend.app.api.v1 import router as v1_router
+from app.kongming_agent.backend.app.core.config import settings
+from app.kongming_agent.backend.app.core.database import init_db
+from app.kongming_agent.backend.app.services.session_service import session_service
 
 
 def _render_static_shell() -> str:

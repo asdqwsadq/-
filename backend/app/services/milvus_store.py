@@ -7,7 +7,7 @@ from typing import Any
 
 from pymilvus import Collection, CollectionSchema, DataType, FieldSchema, MilvusException, connections, utility
 
-from app.core.config import settings
+from app.kongming_agent.backend.app.core.config import settings
 
 
 @dataclass

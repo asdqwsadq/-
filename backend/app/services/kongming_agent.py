@@ -5,10 +5,10 @@ from dataclasses import dataclass
 from time import perf_counter
 from typing import Any
 
-from app.core.config import settings
-from app.services.deepseek_client import deepseek_client
-from app.services.knowledge_base import FourClassicsKnowledgeBase
-from app.services.session_service import session_service
+from app.kongming_agent.backend.app.core.config import settings
+from app.kongming_agent.backend.app.services.deepseek_client import deepseek_client
+from app.kongming_agent.backend.app.services.knowledge_base import FourClassicsKnowledgeBase
+from app.kongming_agent.backend.app.services.session_service import session_service
 
 
 # 四大名著实体关键词 — 问题必须命中至少一个才算相关

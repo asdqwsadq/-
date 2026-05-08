@@ -5,9 +5,9 @@ import json
 from fastapi import APIRouter, HTTPException, Query
 from fastapi.responses import StreamingResponse
 
-from app.schemas import AgentConfigUpdateRequest, ApiResponse, MessageCreateRequest, SessionCreateRequest, SessionRecord, SessionUpdateRequest
-from app.services.kongming_agent import kongming_agent_service
-from app.services.session_service import session_service
+from app.kongming_agent.backend.app.schemas import AgentConfigUpdateRequest, ApiResponse, MessageCreateRequest, SessionCreateRequest, SessionRecord, SessionUpdateRequest
+from app.kongming_agent.backend.app.services.kongming_agent import kongming_agent_service
+from app.kongming_agent.backend.app.services.session_service import session_service
 
 
 router = APIRouter(tags=["会话与智能体"])

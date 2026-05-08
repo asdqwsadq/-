@@ -1,6 +1,6 @@
 type Json = Record<string, unknown>;
 
-const API_BASE = '/api/v1';
+const API_BASE = '/kongming/api/v1';
 
 async function request<T>(path: string, init: RequestInit = {}): Promise<T> {
   const response = await fetch(`${API_BASE}${path}`, {

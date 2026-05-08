@@ -7,7 +7,7 @@ from sqlalchemy import Boolean, DateTime, Float, ForeignKey, Integer, String, Te
 from sqlalchemy.dialects.mysql import JSON, LONGTEXT
 from sqlalchemy.orm import Mapped, mapped_column
 
-from app.core.database import Base
+from app.kongming_agent.backend.app.core.database import Base
 
 
 class AppMeta(Base):
